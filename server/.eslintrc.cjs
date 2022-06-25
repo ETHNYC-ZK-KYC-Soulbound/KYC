@@ -9,8 +9,8 @@ module.exports = {
     '@typescript-eslint',
   ],
   extends: [
-    'airbnb',
-    'airbnb-typescript',
+    'airbnb-base',
+    'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
@@ -41,9 +41,6 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-unused-vars': 'warn',
     'no-param-reassign': 0,
-    // funky react stuff
-    'react/require-default-props': 0,
-    'react-hooks/exhaustive-deps': 1,
 
     // typescripts
     'import/extensions': 1,
@@ -56,5 +53,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 1,
     '@typescript-eslint/semi': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
+    '@typescript-eslint/no-misused-promises': 1,
+    '@typescript-eslint/ban-ts-comment': 0,
   },
 }

@@ -64,6 +64,8 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 1,
     '@typescript-eslint/semi': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
+    '@typescript-eslint/no-misused-promises': 1,
+    '@typescript-eslint/ban-ts-comment': 0,
 
     // tailwindcss
     // 'tailwindcss/no-custom-classname': 0,
