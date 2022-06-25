@@ -31,7 +31,6 @@
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
-    "stripe": "^9.10.0",
     "usehooks-ts": "^2.5.4",
     "web-vitals": "^2.1.4"
   },
