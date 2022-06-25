@@ -1,23 +1,18 @@
 module.exports = {
   env: {
-    browser: true,
+    browser: false,
     es2021: true,
     mocha: true,
-    node: false,
+    node: true,
   },
   plugins: [
     '@typescript-eslint',
-    'react',
-    // 'tailwindcss', // makes linting very slow
   ],
   extends: [
     'airbnb',
     'airbnb-typescript',
-    'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:react/recommended',
-    // 'plugin:tailwindcss/recommended', // makes linting very slow
   ],
   ignorePatterns: ['.eslintrc.js'],
   parser: '@typescript-eslint/parser',
@@ -50,9 +45,6 @@ module.exports = {
     'react/require-default-props': 0,
     'react-hooks/exhaustive-deps': 1,
 
-    // jsx ally
-    'jsx-a11y/label-has-associated-control': 'warn',
-
     // typescripts
     'import/extensions': 1,
     'import/prefer-default-export': 0,
@@ -64,8 +56,5 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 1,
     '@typescript-eslint/semi': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
-
-    // tailwindcss
-    // 'tailwindcss/no-custom-classname': 0,
   },
 }
