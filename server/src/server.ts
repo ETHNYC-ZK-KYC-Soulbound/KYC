@@ -52,9 +52,9 @@ app.post('/create-verification-session', async (req, res) => {
       options: {
         document: {
           allowed_types: ['driving_license', 'passport', 'id_card'],
-          require_id_number: true,
+          require_id_number: true, // https://stripe.com/docs/identity/verification-checks?type=id-number
           require_live_capture: true,
-          require_matching_selfie: true,
+          require_matching_selfie: true, // https://stripe.com/docs/identity/selfie#session
         },
       },
     })
@@ -69,6 +69,9 @@ app.post('/create-verification-session', async (req, res) => {
   }
 })
 
+// NOTE:
+// https://github.com/stripe-samples/identity/blob/main/modal/server/node-typescript/src/server.ts
+// https://github.com/stripe/stripe-node#webhook-signing
 app.post('/webhook', (req, res) => {
   let event
   const stripeEndpointSecret = process.env.STRIPE_TEST_WEBHOOK_KEY

@@ -80,7 +80,10 @@ function VerifyButton() {
 export default function StartPageMain() {
   return (
     <Container>
-      <VerifyButton />
+      <h2>Unique address should come from Worldcoin</h2>
+      <div className="pt-2">
+        <VerifyButton />
+      </div>
     </Container>
   )
 }
